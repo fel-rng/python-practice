@@ -10,10 +10,11 @@ Pythonの学習記録用リポジトリです。
 
 ## プログラム一覧
 
-| No. | プログラム | 内容 |
-|:---:|-----------|------|
-| 01 | Hello World | Git・GitHubの操作を学ぶための最初のプログラム |
-| 02 | BMI Calculator | 身長と体重からBMIを計算するプログラム |
+| No. | プログラム | 内容 | 主な学習項目 |
+|:---:|---|---|---|
+| 01 | [Hello World](01-hello-world) | 最初のPythonプログラム | 標準出力、Git、GitHub |
+| 02 | [BMI Calculator](02-bmi-calculator) | 身長と体重からBMIを計算 | 関数、入力、型変換、計算 |
+
 
 ## 開発環境
 
