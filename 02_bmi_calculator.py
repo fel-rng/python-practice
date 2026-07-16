@@ -1,25 +1,14 @@
-def input_weight():
+def input_positive_number(item, unit):
     while True:
         try:
-            weight = float(input("体重(kg)を入力してください："))
-            if weight <= 0:
+            value = float(input(f"{item}{unit}を入力してください："))
+            if value <= 0:
                 print("0より大きい数値を入力してください。")
                 continue
-            return weight
+            return value
         except ValueError:
             print("数値を入力してください。")
 
-
-def input_height():
-    while True:
-        try:
-            height = float(input("身長(cm)を入力してください："))
-            if height <= 0:
-                print("0より大きい数値を入力してください。")
-                continue
-            return height
-        except ValueError:
-            print("数値を入力してください。")
 
 def calc_bmi(height, weight):
     bmi = weight / (height ** 2)
@@ -47,8 +36,8 @@ def display_result(bmi):
 
 def main():
     while True:
-        height = input_height()
-        weight = input_weight()
+        height = input_positive_number("身長", "cm")
+        weight = input_positive_number("体重", "kg")
 
         height_m = height / 100
     
