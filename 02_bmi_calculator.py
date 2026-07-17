@@ -1,3 +1,4 @@
+# 入力処理
 def input_positive_number(item, unit):
     while True:
         try:
@@ -10,11 +11,13 @@ def input_positive_number(item, unit):
             print("数値を入力してください。")
 
 
+# BMI計算処理
 def calc_bmi(height, weight):
     bmi = weight / (height ** 2)
     return bmi
 
 
+# BMI判定処理
 def judge_bmi(bmi):
     if bmi < 18.5:
         return "低体重"
@@ -29,11 +32,13 @@ def judge_bmi(bmi):
     else:
         return "肥満（4度）"
 
-    
+   
+# 結果表示 
 def display_result(bmi):
     print(f"BMIは{bmi:.1f}で、判定結果は「{judge_bmi(bmi)}」です。")
 
 
+# メイン処理
 def main():
     while True:
         height = input_positive_number("身長", "cm")
